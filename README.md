@@ -1,2 +1,2 @@
 # emporio-text-on-image
-Lambda in which you put a text on an image
+AWS Lambda in which you put a text on an image
