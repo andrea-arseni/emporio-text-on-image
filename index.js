@@ -96,7 +96,7 @@ exports.handler = async (event) => {
 
     // update name 0 to name 21 + save newFile as name 0 and code done.png 
     const updateFirstPhoto = `UPDATE \`file\` SET nome = '21' WHERE immobile = ${idImmobile} AND nome = '1'`;
-    const createRecord = `INSERT INTO \`file\` (immobile, tipologia, nome, codice_bucket) VALUES (${idImmobile}, 'FOTO', '1', 'done.png')`;
+    const createRecord = `INSERT INTO \`file\` (immobile, tipologia, nome, codice_bucket) VALUES (${idImmobile}, 'FOTO', '1', '${ref}/done.png')`;
 
     await connection.query('START TRANSACTION');
     try{
